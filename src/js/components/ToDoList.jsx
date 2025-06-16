@@ -40,7 +40,10 @@ const ToDoList = () => {
                 </li>
                 {
                     list.map((item, index) => (
-                        <li key={index} className="d-flex list-group-item justify-content-between tarea">{item} <span className="d-none delete-btn" onClick={handleDelete(index)}>❌</span></li>
+                        <li key={index} className="d-flex list-group-item justify-content-between tarea">
+                            {item}
+                            <span className="d-none delete-btn" onClick={handleDelete(index)}>❌</span>
+                        </li>
                     ))
                 }
                 <li className="list-group-item text-secondary text-start small italic">
